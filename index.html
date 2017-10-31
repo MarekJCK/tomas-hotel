@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" />
     <title>Blank project structure</title>
     <link rel="canonical" href="//www.project.com" />
     <meta property="og:locale" content="en_EN" />
@@ -24,30 +25,54 @@
 
       <header class="header">
 
-        <nav>
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 
           <div class="container">
 
-              <div class="header-logo column col-lg-3">
+            <div class="navbar-header">
 
-                <img src="img/logo.png" alt="Logo">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
-              </div>
+                <span class="sr-only">Toggle navigation</span>
 
-              <div class="nav-span column col-lg-9">
+                <span class="icon-bar"></span>
 
-                  <a href="#">UBYTOVÁNÍ</a>
-                  <a href="#">WELLNESS</a>
-                  <a href="#">POBYTOVÉ BALÍČKY</a>
-                  <a href="#">KONTAKT</a>
-                  <a href="#">AKTIVITY</a>
-                  <a href="#">REZERVACE</a>
+                <span class="icon-bar"></span>
 
-              </div>
+                <span class="icon-bar"></span>
+
+              </button>
+
+            </div>
+
+            <div class="header-logo column col-lg-3">
+
+              <img src="img/logo.png" alt="Logo">
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav nav-span column col-lg-9">
+
+                <li><a href="#accommodation">UBYTOVÁNÍ</a></li>
+
+                <li><a href="#activity">WELLNESS</a></li>
+
+                <li><a href="#packages">POBYTOVÉ BALÍČKY</a></li>
+
+                <li><a href="#contact">KONTAKT</a></li>
+
+                <li><a href="#reservation">REZERVACE</a></li>
+
+              </ul>
 
             </div>
 
         </nav>
+
+    </div>
 
       </header>
 
@@ -99,7 +124,7 @@
 
         </section>
 
-        <section class="section section-offer">
+        <section id="packages" class="section section-offer">
 
           <div class="container">
 
@@ -163,7 +188,7 @@
 
         </section>
 
-        <section class="section section-accommodation">
+        <section id="accommodation" class="section section-accommodation">
 
           <div class="container">
 
@@ -193,7 +218,7 @@
 
         </section>
 
-        <section class="section section-repeat">
+        <section id="activity" class="section section-repeat">
 
           <div class="container">
 
@@ -234,7 +259,7 @@
 
         </section>
 
-        <section class="section section-booking">
+        <section id="reservation" class="section section-booking">
 
           <div class="container">
 
@@ -267,7 +292,7 @@
 
         </section>
 
-        <section class="section section-about">
+        <section id="contact" class="section section-about">
 
           <div class="container">
 
@@ -299,9 +324,9 @@
 
               <div class="column col-lg-12">
 
-                <a href="#" class="social"><span>F</span></a>
-                <a href="#" class="social"><span>T</span></a>
-                <a href="#" class="social"><span>Y</span></a>
+                <a href="#" class="social"><span class="glyphicon glyphicon-btc"></span></a>
+                <a href="#" class="social"><span class="glyphicon glyphicon-sunglasses"></span></a>
+                <a href="#" class="social"><span class="glyphicon glyphicon-yen"></span></a>
 
               </div>
 

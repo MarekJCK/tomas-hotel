@@ -9,29 +9,71 @@
     align-items: center;
     z-index: 1;
     background: $blue;
+
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+
   }
 
   & .nav-span {
     display: flex;
     justify-content: space-around;
 
+    @media (max-width: $screen-xs-max) {
+      display: block;
+      background: $blue;
+
+    }
+
     & a {
-      color: $white;
       font-size: 18px;
+      font-family: $nav;
       text-decoration: none;
+      transition: ease-in-out 0.2s;
     }
 
     & a:hover {
-      color: $white-hover;
       transition: ease-in-out 0.2s;
     }
+  }
+
+  & .navbar-inverse .navbar-nav>li>a {
+    color: $white;
+  }
+
+  & .navbar-inverse .navbar-nav>li>a:hover {
+    color: $white-hover;
   }
 
   & .header-logo {
 
     & img {
       position: absolute;
-      top: -54px;
+      top: -40px;
+
+      @media (max-width: $screen-xs-max) {
+        width: 50%;
+        top: -52px;
+      }
+
     }
+  }
+
+  & .navbar {
+
+    & button {
+      border: none;
+    }
+
+    & button:focus,
+      button:hover {
+        background-color: transparent;
+    }
+  }
+
+  .navbar-inverse .navbar-collapse {
+    border: none;
+    box-shadow: none;
   }
 }
