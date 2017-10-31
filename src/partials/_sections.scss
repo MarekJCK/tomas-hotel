@@ -171,6 +171,9 @@
 
   & .row {
       padding: 25px 110px 0;
+      @media (max-width: $screen-xs-max) {
+        padding: 25px 50px 0;
+      }
   }
 
   & .repeat-text-container {
@@ -245,6 +248,9 @@
         border-radius: 15px;
         font-size: 22px;
         color: $grey;
+        @media (max-width: $screen-xs-max) {
+          width: 100%;
+        }
       }
     }
 
@@ -252,6 +258,10 @@
       display: flex;
       justify-content: center;
       margin-top: 10px;
+      @media (max-width: $screen-xs-max) {
+        flex-direction: column;
+        margin-top: 0;
+      }
 
       & input {
         width: 25%;
@@ -261,6 +271,10 @@
         border-radius: 15px;
         font-size: 22px;
         color: $grey;
+        @media (max-width: $screen-xs-max) {
+          width: 100%;
+          margin: 13px 0;
+        }
       }
 
       & input[type="submit"] {
